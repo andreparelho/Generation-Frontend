@@ -5,41 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 </head>
-<body>
-    <body>
-        <div class="container-menu">
-            <ul>
-                <li class = "menu"><a href="index.html"> HOME</a></li>
-                <img class = "mini-logo" src="./assets/img/logo_menu.svg" alt="Mini Logo Houston Rockets">
-                <li class = "menu"><a href="contato.html"> CONTATO</a></li>
-            </ul>
-                </div>
-    
-        <form>
-            <label for="nome"> Nome:</label>
-            <input type="text" id="nome">
-    
-            <label for="e-mail"> E-mail:</label>
-            <input type="text" id="e-mail">
-    
-            <label for="assunto">Assunto</label>
-            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
-            <button>Enviar</button>
-        </form>
 
-        <img class="logo-contato" src="./assets/img/houston_rockets.png" alt="Logo Houston Rockets" width="222" height="222">
-  
-    <h2>Endereço:</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.9288149515296!2d-95.366325018262!3d29.75077329035828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf22b63d4e7d%3A0xe6eceba384882a37!2sHouston%20Rockets!5e0!3m2!1spt-BR!2sbr!4v1661453377356!5m2!1spt-BR!2sbr" 
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<body>
+
+     <!-- menu  -->
+     <header class="container-menu">
+        <nav>
+            <ul>
+                <li class = "menu">
+                    <a href="index.html"> HOME</a>
+                </li>
+                <li>
+                    <img class = "mini-logo" src="./assets/img/logo_menu.svg" alt="Mini Logo Houston Rockets">
+                </li>
+                <li class = "menu">
+                    <a href="contato.html"> CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- forms -->
+     <main>
+        <section>
+            <div class="container-inicial">
+                <form>
+                    <label for="nome"> Nome:</label>
+                    <input type="text" id="nome" onkeyup="validationNome">
+                    <div id="txt-nome"></div>
+
+                    <label for="e-mail"> E-mail:</label>
+                    <input type="text" id="e-mail">
+                    <div id="txt-email"></div>
+            
+                    <label for="assunto">Assunto</label>
+                    <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+                    <div id="txt-assunto"></div>
+                    <button>Enviar</button>
+                </form>
+        
+             <!-- foto background -->
+                <!-- = <img class="logo-contato" src="./assets/img/houston_rockets.png" alt="Logo Houston Rockets" width="222" height="222"> --->
+          
+                <h2>Endereço:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.9288149515296!2d-95.366325018262!3d29.75077329035828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640bf22b63d4e7d%3A0xe6eceba384882a37!2sHouston%20Rockets!5e0!3m2!1spt-BR!2sbr!4v1661453377356!5m2!1spt-BR!2sbr" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapZoomOn" onmouseout="mapZoomOf"></iframe>
+            </div>
+        </section>
+     </main>
+        
+    <!-- footer --> 
     <footer>
+        <hr>
+        <div class="containerfooter">
+            <a href="https://github.com/andreparelho/Generation-Frontend" target="_blank">
+                <img class="img-footer" src="/assets/img/github.png" alt="Logo github">
+            </a>
+    
+            <a href="https://www.linkedin.com/in/andré-parelho-das-neves-3a3610137/" target="_blank">
+                <img class="img-footer" src="/assets/img/linkedin (3).png" alt="Logo linkedin">
+            </a>
+        </div>
+            
         <p> Feito por André Parelho</p>
      </footer>
-</body>
+
+<script src="/js/script.js"></script>
 </body>
 </html>

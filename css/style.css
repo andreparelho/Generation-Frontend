@@ -1,5 +1,4 @@
 /* index.html*/
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -16,7 +15,6 @@ body {
 
 
 /* ------------- header -------------   */
-
 .container-menu {
     width: 100%;
     height: 7rem;
@@ -67,7 +65,6 @@ li {
 }
 
 /* --------------  main -----------   */
-
 section {
     width: 100%;
     padding: 2rem 0 ;
@@ -78,7 +75,7 @@ section {
     height: 25rem;
     display:grid;
     grid-template-columns: 350px 1fr;
-    padding: 2rem 0;
+    padding: 0.5rem 0;
 }
 
 .container-inicial .texto-houston {
@@ -94,8 +91,8 @@ section {
 .container-inicial .texto-houston span {
     text-align: center;
     padding: 1rem;
+    
 }
-
 
 /* ------------- imagens ---------   */
 .top-players {
@@ -113,13 +110,50 @@ section {
     flex-wrap: wrap;
 }
 
-/* contato.html*/
+.img-footer {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
 
-/* .logo-contato {
+/* contato.html*/
+.logo-contato {
     opacity: 0.2;
     width: 700px;
     height: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}  */
+} 
+
+
+/* --------------  footer -----------   */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .containerfooter {
+    height: 100% ;
+    display: flex;
+    align-items: center;
+}
+
+.footer .containerfooter a {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .containerfooter a > img {
+    width: 15%;
+    margin-bottom: 1rem;
+}
+
+.footer .containerfooter p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}

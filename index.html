@@ -2,59 +2,88 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home</title>
 </head>
 
-<body>
- 
-   
-        <header class="container-menu">
+<body>  
+    <!-- menu  -->
+    <header class="container-menu">
+        <nav>
             <ul>
-                <li class = "menu"><a href="index.html"> HOME</a></li>
-                <img class = "mini-logo" src="./assets/img/logo_menu.svg" alt="Mini Logo Houston Rockets">
-                <li class = "menu"><a href="contato.html"> CONTATO</a></li>
+                <li class = "menu">
+                    <a href="index.html"> HOME</a>
+                </li>
+                <li>
+                    <img class = "mini-logo" src="./assets/img/logo_menu.svg" alt="Mini Logo Houston Rockets">
+                </li>
+                <li class = "menu">
+                    <a href="contato.html"> CONTATO</a>
+                </li>
             </ul>
-        </header>
+        </nav>
+    </header>
+
     <main>
-    <div class = "container-inicial">
-        <div class="houston-img">
-            <img src="./assets/img/houston_rockets.png" alt="Logo Houston Rockets">
-    </div>
-    <div id = "texto-houston">
-        <span>Houston Rockets é uma equipe profissional norte-americana de basquetebol baseada em Houston, Texas. 
-            Os Rockets competem na National Basketball Association como membros da Conferência Oeste, divisão sudoeste. 
-            A equipe tem como arena o Toyota Center, onde jogam os seus jogos de casa.
-        </span>
-    </div>
-</div>
-<div>
-     <h2 class="top-players">TOP PLAYERS</h2>
+        <section>
+            <div class="container-inicial">
 
-     <h3 >Hakeem Olajuwon</h3>
-     <img  class="size-img" src="./assets/img/hakeemolajuwon.png" alt="Foto Hakeem Olajuwon">
+                <div class="houston-img">
+                    <img src="./assets/img/houston_rockets.png" alt="Logo Houston Rockets">
+                </div>
 
-     <h3>Moses Malone</h3>
-     <img class="size-img" src="./assets/img/moses_malone.png" alt="Foto Moses Malone">
+                <div class="texto-houston">
+                    <span>Houston Rockets é uma equipe profissional norte-americana de basquetebol baseada em Houston, Texas. 
+                        Os Rockets competem na National Basketball Association como membros da Conferência Oeste, divisão sudoeste. 
+                        A equipe tem como arena o Toyota Center, onde jogam os seus jogos de casa.
+                    </span>
+                </div>
 
-     <h3>Tracy McGrady</h3>
-     <img class="size-img" src="./assets/img/tracy.png" alt="Foto Tracy McGrady">
+            </div>
+        </section>
 
-     <h3>Yao Ming</h3>
-     <img class="size-img" src="./assets/img/yaoming.png" alt="Foto Yao Ming">
+    
+        <div>
+            <h2 class="top-players">TOP PLAYERS</h2>
 
-     <h3>James Harden</h3>
-     <img class="size-img" src="./assets/img/jamesharden.png" alt="Foto James Harden">
-</div>
-    </main>
+            <h3 >Hakeem Olajuwon</h3>
+            <img  class="size-img" src="./assets/img/hakeemolajuwon.png" alt="Foto Hakeem Olajuwon">
+
+            <h3>Moses Malone</h3>
+            <img class="size-img" src="./assets/img/moses_malone.png" alt="Foto Moses Malone">
+
+            <h3>Tracy McGrady</h3>
+            <img class="size-img" src="./assets/img/tracy.png" alt="Foto Tracy McGrady">
+
+            <h3>Yao Ming</h3>
+            <img class="size-img" src="./assets/img/yaoming.png" alt="Foto Yao Ming">
+
+            <h3>James Harden</h3>
+            <img class="size-img" src="./assets/img/jamesharden.png" alt="Foto James Harden">
+        </div>
+    </main> 
+
+    <!-- footer -->
      <footer>
+        <hr>
+        <div class="containerfooter">
+            <a href="https://github.com/andreparelho/Generation-Frontend" target="_blank">
+                <img class="img-footer" src="/assets/img/github.png" alt="Logo github">
+            </a>
+    
+            <a href="https://www.linkedin.com/in/andré-parelho-das-neves-3a3610137/" target="_blank">
+                <img class="img-footer" src="/assets/img/linkedin (3).png" alt="Logo linkedin">
+            </a>
+        </div>
+            
         <p> Feito por André Parelho</p>
      </footer>
-    
+
 </body>
 </html>
